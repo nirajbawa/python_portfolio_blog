@@ -1,0 +1,559 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#enav{
+    width: 100%;
+    height: 70px;
+    background-color: whitesmoke;
+    display: flex;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 2px black;
+}
+
+.elog{
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-right: 30%;
+    margin-bottom: 10px;
+}
+
+
+#enav div a button{
+    width: 150px;
+    height: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: all .15s;
+    margin-right: 10px;
+}
+
+.btnrse{
+    display: none;
+}
+
+.emainicoe{
+    display: none;
+}
+
+
+#enav a button:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}
+
+#mainpost{
+    width: 100%;
+    height: 700px;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    padding-top: 300px;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+
+.postheading{
+    color: white;
+    font-size: 50px;
+    font-family: 'Heebo', sans-serif;
+}
+
+#postsec{
+    width: 100%;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: fit-content;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1px;
+    border: 2px solid black;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+    overflow: hidden;
+  }
+
+  th{
+      padding: 5px;
+  }
+
+  td a{
+      text-decoration: none;
+      color: black;
+      transition: all 0.5s;
+  }
+
+  td a:hover{
+      color: blue;
+  }
+
+  tr:hover{
+      background-color: wheat;
+  }
+
+  td a img{
+      width: 200px;
+      height: 100px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 3px solid black;
+      overflow: hidden;
+      transition: all 0.5s;
+  }
+
+  td a img:hover{
+      transform: scale(1.05);
+  }
+
+  td button{
+        width: 50px;
+        height: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all .15s;
+  }
+
+td button:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}
+  
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+
+  #postfatch{
+      display: none;
+  }
+
+  /* edit page css start here */
+
+  #epost{
+      padding: 20px;
+      background-color: whitesmoke;
+  }
+
+  #res{
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 50px;
+    height: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all .15s;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: none;
+}
+
+#res img{
+    width: 30px;
+    height: 20px;
+}
+
+
+#resclose{
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 50px;
+    height: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all .15s;
+    margin-top: 5px;
+    margin-left: 15px;
+    position: absolute;
+    top: 77px;
+    display: none;
+}
+
+#resclose img{
+    width: 30px;
+    height: 20px;
+}
+
+#resclose:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}
+
+#res:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}
+
+
+  #etoolbar{
+      width: 100%;
+      height: 140px;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 5px;
+      padding: 10px;
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+
+  #etoolbar div{
+      text-transform: capitalize;
+      align-items: center;
+  }
+
+  #etoolbar div p{
+      background-color: whitesmoke;
+      padding: 5px;
+      text-align: center;
+      font-size: 16px;
+      margin: 2px;
+  }
+
+  #etoolbar div button{
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 80px;
+    height: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all .15s;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  .fontstylee{
+      margin-right: 13px;
+  }
+
+  .efont{
+      margin-right: 15px;
+  }
+
+  .homee{
+      margin-top: 15px;
+  }
+
+  .upfi{
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 96px;
+    height: 23px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all .15s;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  #fontsize{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 130px;
+  }
+
+  #etoolbar div button:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}
+
+
+  .etitle{
+      margin-top: 20px;
+      width: 100%;
+      height: 40px;
+      font-size: 20px;
+      padding: 5px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+  }
+
+  .eimage{
+      width: 30%;
+      height: 35px;
+      font-size: 15px;
+      padding: 5px;
+      letter-spacing: 2px;
+  }
+
+  .esub{
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 80px;
+    height: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all .15s;
+    margin-left: 60%;
+  }
+
+.esub:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}
+
+  .etext{
+      width: 100%;
+      height: 100vh;
+      padding: 10px;
+  }
+
+@media only screen and (max-width: 1182px){
+    #mainpost{
+        height: 295px;
+        padding-top: 100px;
+        margin-top: 0%;
+        background-position-y: 12%;
+        height: 265px;
+    }
+    .postheading{
+        font-size: 30px;
+    }
+
+    #enav{
+        height: 50px;
+        padding: 3px;
+    }
+
+    #enav .elog{
+        font-size: 30px;
+        margin-right: 1%;
+        margin-top: 5px;
+    }
+
+    #poech{
+        position: fixed;
+        top: 40%;
+        left: 10%;
+        display: none;
+    }
+
+    #poech a button{
+        margin-bottom: 10px;
+        margin-left: 25%;
+    }
+
+    .btnrse{
+        display: block;
+    }
+
+    .emainicoe{
+        display: block;
+        font-size: 15px;
+        text-transform: capitalize;
+        width: 50px;
+        height: 40px;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all .15s;
+        margin-top: 5px;
+        margin-left: 30%;
+        position: relative;
+    }
+
+    .emainicoe img{
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+   
+
+    table{
+        display: none;
+    } 
+
+    #postfatch{
+        display: block;
+        padding: 10px;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        margin-bottom: 10%;
+        box-shadow: 1px 1px 10px 2px;
+    }
+
+    #postfatch .innerdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #postfatch div img{
+        width: 200px;
+        height: 110px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    #postfatch .indivin{
+        margin: 10px;
+    }
+
+    #postfatch .indivin a{
+        text-decoration: none;
+    }
+
+    #postfatch .indivin h5{
+        font-size: 15px;
+        text-transform: capitalize;
+        color: black;
+    }
+
+    #postfatch a button{
+        font-size: 15px;
+        text-transform: capitalize;
+        width: 60px;
+        height: 35px;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        transition: all .15s;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    #postfatch .indivin h5:active{
+        color: blue;
+    }
+
+    #etoolbar{
+        display: none;
+        flex-direction: column;
+        height: 500px;
+    }
+    .esub{
+        margin-left: 40%;
+    }
+    #res{
+        display: block;
+    }
+    #etoolbar div button{
+        margin-left: 35%;
+    }
+    #fontsize{
+        margin-left: 40%;
+    }
+}
+
+#userhed{
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+#usercard{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px black;
+    background-color: wheat;
+    transition: all 0.5s;
+}
+
+#usercard h1{
+    padding: 2%;
+}
+
+#usercard p{
+    padding: 10px;
+}
+
+#usercard:hover{
+    background-color: white;
+}
+
+#deleuser{
+    width: 50px;
+    height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    transition: all .15s;
+}
+
+#deleuser:hover{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), #0d6efd;
+}

@@ -1,0 +1,1246 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: -60%;
+    transition: all 1s ease-in ;
+}
+
+
+
+@media only screen and (max-width: 920px){
+    header{
+        background-color: white;
+        align-items: center;
+    }
+
+     #nav ul{
+       display: none;
+    }
+
+    #nav li{
+        display: none;
+  
+    }
+}
+
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    font-size: 25px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #262626;
+    position: fixed;
+    top: 0;
+}
+
+#btn{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+#mobilemenu{
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 1px 50px 5px  black;
+    display: none;
+}
+
+#clo{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 9px;
+    border: none;
+    background-color: black;
+    display: none;
+}
+
+
+#clo img{
+    width: 30px;
+    height: 30px;
+}
+
+#clo:hover{
+    background-color: #e6e6e6;
+}
+
+#headimg{
+    width: 240px;
+    height: 160px;
+    background-color: white;
+    position: relative;
+    top: 10%;
+    display: none;
+}
+
+#headimg img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 20%;
+    display: none;
+}
+
+#ma{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 25px;
+    text-transform: capitalize;
+    display: none;
+}
+
+#ma a{
+    color: white;
+}
+
+#ma a p{
+    
+    padding: 5px;
+    background-color: black;
+    margin-top: 20px;
+    transition: all 1s ease-in-out;
+}
+
+#ma a p:hover{
+    background-color: #e6e6e6;
+}
+
+#ma .btn11{
+    font-weight: bold;
+    background-color: #ff3333;
+    width: 70%;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    text-transform: capitalize;
+}
+
+#ma .btn11:hover{
+    background-color: #e6e6e6;
+}
+
+
+#ma .btn22{
+    font-weight: bold;
+    background-color: #1affd1;
+    width: 50%;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    text-transform: capitalize;
+}
+
+#ma .btn22:hover{
+    background-color: #e6e6e6;
+}
+
+#ma a p img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 30px;
+    margin-top: 5px;
+}
+
+
+
+@media only screen and (max-width: 920px){
+    #btn{
+        background-color: transparent;
+        padding: 1px;
+        border: none;
+        margin-left: 5%;
+        display: block;
+    }
+    #menu{
+    width: 30px;
+    height: 30px;
+    display: block;
+    }
+   
+}
+
+
+
+
+#nav .logo{
+    margin-left: 1%;
+    text-transform: uppercase;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: row;
+    font-family: 'Roboto Slab', serif;
+    left: 30%;
+    top: 5px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    transition: all 1S ease-in-out;
+}
+
+#nav li{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+}
+
+#nav ul :hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+#con{
+    display: flex;
+    position: static;
+}
+
+
+#con div{
+    width: 400px;
+    margin-top: 15%;
+    margin-left: 4%;
+    text-shadow: 2px 2px  5px rgb(146, 146, 146);
+}
+
+#con div #h1{
+    color: #ffff33;
+    letter-spacing: 3px;
+    font-size: 80px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Nerko One', cursive;
+    animation: open 2s ease-in-out 1 forwards;
+    
+}
+
+
+
+#con div p{
+    color: #1affa3;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Nerko One', cursive;
+   
+}
+
+
+#con img{
+    width: 600px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+.bt6{
+    width: 100px;
+    height: 40px;
+    margin-top: 5%;
+    margin-right: 5%;
+    background-color: #33ffff;
+    border-radius: 5px;
+    border: 4px solid white;
+    font-size: 20px;
+    font-family: 'Nerko One', cursive;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 10px 1px #333333;
+    transition: all 1s ease-in;
+}
+
+.bt6:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bt5{
+    width: 100px;
+    height: 40px;
+    margin-right: 5%;
+    background-color: #00ffbf;
+    font-size: 20px;
+    font-family: 'Nerko One', cursive;
+    border-radius: 5px;
+    border: 4px solid white;
+    box-shadow: 1px 1px 10px 1px #333333;
+    transition: all 1s ease-in;
+}
+
+
+.bt5:hover{
+    border-radius: 5px;
+    background-color: #33ffff;
+}
+
+
+
+@media only screen and (max-width: 1182px){
+
+
+    .bt6{
+        display: none;
+    }
+
+    .bt5{
+        display: none;
+    }
+
+    #con img{
+       width: 40px;
+       height: 40px;
+       margin-left: -1%;
+       margin-top: 0%;
+    }
+
+    #con{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #con div{
+        margin-top: 40%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #con div #h1{
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+
+#nav .logo{
+        font-size: 20px;
+        position: relative;
+        left: 17%;
+        top: 10%;
+    }
+
+}
+
+
+
+
+/* tablet media screen code */
+@media only screen and (max-width: 1100px){
+    header{
+        background-position-y: 30%;
+        background-position-x: -200%;
+        background-image: url('../bg21.png');
+    }
+
+    #con div{
+        margin-top: 15%;
+        width: 300px;
+    }
+
+    #con div #h1{
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+
+    #con div p{
+       letter-spacing: 3px;
+       font-size: 27px;
+    }
+
+    #con img{
+        width: 400px;
+        height: 400px;
+    }
+    
+}
+
+
+
+
+/* post section start here */
+
+
+#post{
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+}
+
+
+#title{
+    margin-top: 5%;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-bottom: 10%;
+    font-weight: bold;
+    box-shadow: 1px 1px 20px 1px black;
+    border-radius: 5px;
+    transition: all ease 1s;
+    padding: 5px;
+    border: 4px solid white;
+}
+
+#title:hover{
+    background-color: #d9d9d9;
+}
+
+
+
+#post #cont{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card{
+background-color: whitesmoke;
+box-shadow: 1px 1px 20px 1px black;
+font-family: 'Nerko One', cursive;
+border-radius: 5px;
+height: 400px;
+width: 350px;
+transition: all ease 1s;
+border: 4px solid white;
+margin-bottom: 5%;
+}
+
+.card:hover{
+    background-color: #d9d9d9;
+}
+
+
+.card .image img{
+    padding: 15px;
+}
+
+.card .image img{
+    width: 350px;
+    height: 200px;
+}
+
+
+.card .containt{
+    text-align: center;
+}
+
+.card .containt h2{
+    font-size: 30px;
+    color: black;
+    background-color: white;
+}
+
+.card .containt p{
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+    color: black;
+}
+
+.card .containt a{
+    text-decoration: none;
+}
+
+#readmore{
+    width: 150px;
+    height: 40px;
+    margin-left: 85%;
+    border-radius: 5px;
+    border: 4px solid white;
+    background-color: #ff1a1a;
+    box-shadow: 1px 1px 10px 1px black;
+    transition: all 1s ease-in;
+    margin-top: 5%;
+    float: none;
+}
+
+#readmore a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+#readmore:hover{
+    background-color: #1affff;
+}
+
+.card .containt h2:hover{
+    color: blue;
+}
+
+
+/* articel  section responsive code */
+
+@media only screen and (max-width: 1182px){
+
+#post #cont{
+    flex-direction: column;
+    align-items: center;
+}    
+
+.card{
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+#title{
+    margin-top: 10%;
+    box-shadow: 1px 1px 10px 1px black;
+    font-size: 35px;
+}
+
+#readmore{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+}
+
+/* about section start here */
+
+#about{
+    width: 100%;
+    background-color: white;
+    padding: 10%;
+    padding-top: 5%;
+    align-items: center;
+}
+
+#abmain{
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px 1px black;
+    display: flex;
+    border: 4px solid white;
+    border-radius: 8px;
+    transition: all 1s ease-in;
+
+}
+
+#imagesection{
+    background-color: whitesmoke;
+    transition: all 1s ease-in;
+}
+
+#imagesection img{
+    width: 400px;
+    height: 550px;
+    margin-top: -12%;
+
+}
+
+#atinfo{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#abme{
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#abmain:hover{
+    background-color: #d9d9d9;
+}
+
+#imagesection:hover{
+    background-color: #d9d9d9;
+}
+
+#abt{
+    font-size: 60px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-bottom: 8%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 1px black;
+    transition: all 1s ease-in;
+}
+
+
+#abt:hover{
+    background-color: #d9d9d9;
+}
+
+/*about setion risposive code start here*/
+
+
+@media only screen and (max-width: 1182px){
+    #abmain{
+        flex-direction: column;
+    }
+
+    
+#imagesection{
+    align-items: center;
+}
+
+#imagesection img{
+    width: 400px;
+    height: 550px;
+    margin-top: -13%;
+    margin-left: -50px;
+}
+
+#abt{
+    font-size: 40px;
+}
+
+#abme{
+    margin-bottom: 5%;
+}
+
+}
+
+/* skill section start here */
+
+
+#skill{
+   padding: 10%;
+   background-color: black;
+}
+
+#sktitle{
+    font-size: 50px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-bottom: 8%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px wheat;
+    transition: all 1s ease-in;
+}
+
+.t1{
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 8%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px wheat;
+    transition: all 1s ease-in;
+}
+
+#t2{
+    margin-top: 8%;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 8%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px white;
+    transition: all 1s ease-in;
+}
+
+#skmain p{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#skmain p img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.container {
+  width: 100%; /* Full width */
+  background-color: whitesmoke; 
+  border-radius: 20px;
+  margin: 2%;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: black;
+}
+
+
+
+
+/* skill risponsive code here */
+
+@media only screen and (max-width: 1182px){
+.skills{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+}
+
+
+#html {width: 0%; background-color: #4dffc3;   border-radius: 20px;} /* Green */
+
+@keyframes niraj{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 95%;
+    }
+}
+
+
+
+#css {width: 0%; background-color: 	 #4dffc3;   border-radius: 20px;}/* Blue */
+
+@keyframes niraj2{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+#js {width: 0%; background-color: 	 #4dffc3;  border-radius: 20px;} /* Red */
+
+
+@keyframes niraj3{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+#python {width: 0%; background-color: 	 #4dffc3;   border-radius: 20px;} /* Dark Grey */
+
+
+@keyframes niraj4{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 88%;
+    }
+}
+
+#wd{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+@keyframes niraj6{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+
+
+
+#bg{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+@keyframes niraj7{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 99%;
+    }
+}
+
+#ve{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+@keyframes niraj8{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+#gd{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+
+@keyframes niraj9{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+#cw{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+@keyframes niraj10{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+#of{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+
+@keyframes niraj11{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 85%;
+    }
+}
+
+#dm{width: 0%; background-color:	 #4dffc3;   border-radius: 20px;}
+
+@keyframes niraj5{
+    from{
+        width: 2%;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+
+/* skill section responsive code */
+
+@media only screen and (max-width: 1182px){
+
+
+    #sktitle{
+        font-size: 30px;
+    }
+
+    .t1{
+        font-size: 20px;
+    }
+    
+    #t2{
+        font-size: 20px;
+    }
+
+    #skmain p{
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* contact section start here*/
+
+#contact{
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 10%;
+}
+
+#conmain{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.fi{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 90%;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 1s ease-in;
+    border: none;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    
+}
+
+#ct{
+    font-size: 50px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 4%;
+    color: black;
+    margin-bottom: 8%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px black;
+    transition: all 0.5s ease-in-out;
+}
+
+#ct:hover{
+    background-color: #ffffff;
+}
+
+.fl{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    border: none;
+}
+
+
+#number{
+    width: 89%;
+}
+
+.fi:focus{
+    border-bottom: 5px solid #1affff;
+}
+
+.fg{
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 300%;
+}
+
+#massage{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: capitalize;
+}
+
+#fb{
+    padding: 5px;
+    width: 130px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 42%;
+    margin-top: 5%;
+    border-radius: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #1affff;
+    border: none;
+    transition: all 0.20s ease-in-out;
+}
+
+#fb:hover{
+    background-color: white;
+}
+
+
+/* contact section responsive code start here */
+
+@media only screen and (max-width: 1182px){
+    #contact{
+        padding: 5%;
+    }
+
+    #ct{
+        font-size: 40px;
+    }
+
+    #conmain{
+        margin-left: 20%;
+    }
+    .fl{
+        font-size: 20px;
+    }
+    .fi{
+        padding: 4px;
+    }
+    .fl{
+        font-size: 20px;
+    }
+
+    #massage{
+        height: 200px;
+    }
+    #fb{
+        margin-left: 25%;
+    }
+    #conmain{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* contact info section start here */
+
+#contactifo{
+    width: 100%;
+    padding: 10%;
+}
+
+#cft{
+    font-size: 50px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 4%;
+    color: black;
+    margin-bottom: 8%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 2px black;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#confmain{
+    width: 100%;
+    height: 500px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    align-items: center;
+    padding-top: 10%;
+    border-radius: 5px;
+    background-size: cover;
+    color: white;
+}
+
+#confmain a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#socail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#socail img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-attachment: fixed;
+    padding-left: 20px;
+    filter: drop-shadow(1px 1px 5px );
+    transition: all 0.5s ;
+}
+
+#socail img:hover{
+    width: 90px
+    
+}
+
+
+/* contact section rsponsive code start here  */
+
+@media only screen and (max-width: 1182px){
+#cft{
+    font-size: 30px;
+}
+
+#confmain{
+    font-size: 20px;
+    height: 200px;
+}
+
+#socail img{
+    width: 50px;
+    height: 50px;
+}
+#socail{
+    align-items: center;
+    margin-top: 5%;
+}
+}
+
+/* footer section start here */
+
+#footer{
+    width: 100%;
+    background-color: black;
+    height: 40px;
+    display: flex;
+}
+
+#footer p{
+    color: white;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+#footer p:hover{
+    color: red;
+}
+
+#footer button{
+    margin-left: 65%;
+    width: 70px;
+    height: 30px;
+    background-color:  #1affff;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+
+#footer button a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#footer button:hover{
+    pointer-events: initial;
+    background-color: white;
+}
+
+/* footer section rsponsive code start here */
+
+
+@media only screen and (max-width: 1182px){
+
+    #footer{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+#footer p{
+    font-size: 10px;
+    text-align: center;
+}
+
+#footer button{
+    margin-left: 0%;
+}
+}
+
+
+
+/*post css start here*/
+
+
+#mainpost{
+    width: 100%;
+    height: 636px;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    padding-top: 300px;
+}
+
+.postheading{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+
+.postcon{
+    padding: 10%;
+    font-size: 25px;
+    line-height: 30px;
+    word-spacing: 4px;
+}
+
+.date{
+    text-align: left;
+    margin-top: 17%;
+    margin-left: 5%;
+    font-size: 20px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1182px){
+    #mainpost{
+        height: 300px;
+        padding-top: 100px;
+        margin-top: 0%;
+        background-position-y: 4%;
+    }
+    .postheading{
+        font-size: 30px;
+        margin-top: 8%;
+    }
+    .date{
+        font-size: 15px;
+        margin-top: 15%;
+    }
+}

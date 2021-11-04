@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!-- header section start here -->
+
+
+{% set fname = '../static/blogpostthumbnail/' + post.image %}
+<header id='mainpost' style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('{{ url_for('static', filename = fname )}}')  ">
+    
+     <h1 class="postheading">{{post.title}}</h1>
+
+     <p class="date">{{post.date}}</p>
+</header>
+
+<div class="postcon">{{post.content}}</div>
+{% endblock %}
