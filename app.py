@@ -133,7 +133,7 @@ def admin():
         else:
             rerror = 'please enter right username'
 
-    return render_template('login.html',params=params, rerror=rerror)
+    return render_template('login.html', params=params, rerror=rerror)
 
 
 @app.route('/edit/<string:no>', methods = ['GET', 'POST'])
@@ -196,26 +196,41 @@ def contacts():
         btnlink = "/signout"
         btntexts = ""
         btnlinks = ""
-    if(request.method=='POST'):
-        '''Add entry to the database'''
-        name = request.form.get('name')
-        email = request.form.get('email')
-        number = request.form.get('number')
-        message = request.form.get('message')
-        entry = Contact(name=name, mono= number, message= message, date= datetime.now(), email = email )
-        db.session.add(entry)
-        db.session.commit()
-        mail.send_message('New Message Send From Super Web',
-                        sender =  email,
-                        recipients = [params['gmail_id']],
-                        body = "Name : "+name+ "\n"+"Number : "+number+"\n"+"\n"+"\t"+message
-                        )
+        if(request.method=='POST'):
+            '''Add entry to the database'''
+            name = request.form.get('name')
+            email = request.form.get('email')
+            number = request.form.get('number')
+            message = request.form.get('message')
+            entry = Contact(name=name, mono= number, message= message, date= datetime.now(), email = email )
+            db.session.add(entry)
+            db.session.commit()
+            mail.send_message('New Message Send From Super Web',
+                            sender =  email,
+                            recipients = [params['gmail_id']],
+                            body = "Name : "+name+ "\n"+"Number : "+number+"\n"+"\n"+"\t"+message
+                            )
         return render_template('contact.html', params=params, btntext=btntext, btnlink=btnlink, btntexts=btntexts, btnlinks=btnlinks)
     else:
         btntexts = "sign up"
         btnlinks = "/signuppage"
         btntext = "sign in"
         btnlink = "/signin"
+        if(request.method=='POST'):
+            '''Add entry to the database'''
+            name = request.form.get('name')
+            email = request.form.get('email')
+            number = request.form.get('number')
+            message = request.form.get('message')
+            entry = Contact(name=name, mono= number, message= message, date= datetime.now(), email = email )
+            db.session.add(entry)
+            db.session.commit()
+            mail.send_message('New Message Send From Super Web',
+                            sender =  email,
+                            recipients = [params['gmail_id']],
+                            body = "Name : "+name+ "\n"+"Number : "+number+"\n"+"\n"+"\t"+message
+                            )
+            return render_template('contact.html', params=params, btntext=btntext, btnlink=btnlink, btntexts=btntexts, btnlinks=btnlinks)
         return render_template('contact.html', params=params, btntext=btntext, btnlink=btnlink, btntexts=btntexts, btnlinks=btnlinks)
 
 
